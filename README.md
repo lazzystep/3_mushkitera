@@ -1,13 +1,12 @@
 # 3_mushkitera
 ## Made by:
-1. Arthos(Lavrynovych) Amateur pooop ninja maker
-2. Parthos(Lewicki) Senior Pooop DevOps
-3. Vlados(Chernii) Senior pooop maker
-## Best App for Toilet Time
+1. Arthos(Lavrynovych) Amateur Alias gangsta
+2. Parthos(Lewicki) Senior Alias DevOps
+3. Vlados(Chernii) Senior Alias Winner
+## Best App for party: IS_Alias
+### Inspired by team fixikii
 
-* Detects when you want to make ka-ka
-* GPS for tracking you in poopTown
-* Add your favorite places
-* Rank best toilets in your city
-* Free toilets, that dont make you strugle 
-* Advice toilets to your friends
+* Funny game for everyone
+* All categories of words (need to pay)
+* All length words (need to pay)
+* User block for wrong answers
