@@ -4,7 +4,7 @@
 2. Parthos(Lewicki) Senior Alias DevOps
 3. Vlados(Chernii) Senior Alias Winner
 ## Best App for party: IS_Alias
-### Inspired by team fixikii
+### Inspired by team fixiki
 
 * Funny game for everyone
 * All categories of words (need to pay)
