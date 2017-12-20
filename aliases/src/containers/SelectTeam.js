@@ -1,20 +1,20 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { NativeRouter, Route, Link } from 'react-router-native'
+import { Scene, Router, Stack, TabBar, Modal, Schema, Actions, Reducer, ActionConst } from 'react-native-router-flux'
 
 const SelectTeam = () => (
     <View style={styles.container}>
         <Text style={styles.header}>
             SELECT TEAM
         </Text>
-        <Link
-            to="/game"
+        <TouchableOpacity
+            onPress={Actions.Game}
             underlayColor='#f0f4f7'>
             <Text
-                style={styles.navItem}>
+                style={styles.btn}>
                 Начать играть
             </Text>
-        </Link>
+        </TouchableOpacity>
     </View>
 );
 
@@ -23,6 +23,11 @@ const styles = StyleSheet.create({
         marginTop: 25,
         padding: 10,
         flex: 2,
+        backgroundColor: 'blue'
+    },
+    btn: {
+        fontSize: 20,
+        color: 'red'
     },
     header: {
         fontSize: 20,
@@ -35,6 +40,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         padding: 10,
+        color: 'black'
     },
     subNavItem: {
         padding: 5,

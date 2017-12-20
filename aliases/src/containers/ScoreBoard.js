@@ -1,18 +1,17 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { NativeRouter, Route, Link } from 'react-router-native'
+import { Scene, Router, Stack, TabBar, Modal, Schema, Actions, Reducer, ActionConst } from 'react-native-router-flux'
 
 const ScoreBoard = () => (
     <View>
         <Text style={styles.header}>
             ALISAS
         </Text>
-        <Link
-            to="/selectMenu"
-            underlayColor='#f0f4f7'
-            style={styles.navItem}>
+        <TouchableOpacity
+            onPress={Actions.SelectTeam}
+            underlayColor='#f0f4f7'>
             <Text>Полетели!</Text>
-        </Link>
+        </TouchableOpacity>
     </View>
 );
 
