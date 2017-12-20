@@ -1,50 +1,37 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Image, Dimensions } from 'react-native'
 import { Scene, Router, Stack, TabBar, Modal, Schema, Actions, Reducer, ActionConst } from 'react-native-router-flux'
 
+import Container from './../components/shared/container';
+import logo from './../components/assets/logo.png';
+import play from './../components/assets/play.png';
+
 const Home = () => (
-    <View style={styles.container}>
-        <Text style={styles.header}>
-            ALISAS
-        </Text>
-        <TouchableOpacity
-            onPress={Actions.SelectTeam}
-            underlayColor='#f0f4f7'>
-            <Text style={styles.btn}>Полетели!</Text>
-        </TouchableOpacity>
+    <View>
+        <Container>
+          <Image source={logo} style={styles.logotype} />
+        </Container>
+        <Container>
+          <TouchableOpacity
+              onPress={Actions.SelectTeam}
+              underlayColor='#f0f4f7'>
+              <Image resizeMode={'cover'} source={play} style={styles.start} />
+          </TouchableOpacity>
+        </Container>
     </View>
 );
 
 const styles = StyleSheet.create({
-    container: {
-        marginTop: 25,
-        padding: 10,
-        flex: 2,
-        backgroundColor: 'blue'
+    logotype: {
+      width: Dimensions.get('window').width / 100 * 70,
+      height: 150,
+      marginTop: 50,
     },
-    header: {
-        fontSize: 20,
+    start: {
+      width: Dimensions.get('window').width / 100 * 70,
+      height: 100,
+      marginTop: 200,
     },
-    btn: {
-        fontSize: 20,
-        color: 'red'
-    },
-    nav: {
-        flexDirection: 'row',
-        justifyContent: 'space-around'
-    },
-    navItem: {
-        flex: 1,
-        alignItems: 'center',
-        padding: 10,
-    },
-    subNavItem: {
-        padding: 5,
-    },
-    topic: {
-        textAlign: 'center',
-        fontSize: 15,
-    }
 })
 
 export default Home;
