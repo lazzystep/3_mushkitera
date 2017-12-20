@@ -5,7 +5,6 @@ import thunk from 'redux-thunk';
 import { View } from "react-native";
 // import reducers from './reducers';
 import Routes from './routes';
-import App from './containers';
 
 
 // const store = createStore(reducers, applyMiddleware(compose(thunk)));
